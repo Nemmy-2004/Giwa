@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <style>
+    .primary { fill: #FF6B42; }
+    .secondary { fill: #0066CC; }
+  </style>
+  <rect x="40" y="40" width="120" height="80" rx="10" class="primary"/>
+  <circle cx="100" cy="140" r="30" class="secondary"/>
+  <path d="M70 60 L130 60 M70 80 L130 80 M70 100 L130 100" stroke="white" stroke-width="4"/>
+</svg>

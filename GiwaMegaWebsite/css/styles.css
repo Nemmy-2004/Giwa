@@ -1,0 +1,294 @@
+/* Global Styles */
+:root {
+    --primary-color: #FF6B42;
+    --secondary-color: #0066CC;
+    --accent-color: #FFD700;
+    --text-dark: #333333;
+    --text-light: #FFFFFF;
+    --background-light: #F5F5F5;
+    --background-white: #FFFFFF;
+    --shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--background-light);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+.header-top {
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+    padding: 10px 0;
+}
+
+.contact-info {
+    text-align: right;
+}
+
+.main-nav {
+    background-color: var(--background-white);
+    padding: 20px 0;
+    box-shadow: var(--shadow);
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo h1 {
+    color: var(--primary-color);
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+.logo p {
+    color: var(--text-dark);
+    font-size: 0.9em;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../attached_assets/WhatsApp Image 2025-02-15 at 11.50.44_65dcb8e6.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--text-light);
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* Products Section */
+.products-section {
+    padding: 80px 0;
+    background-color: var(--background-white);
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.product-card {
+    background: var(--background-white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-image {
+    height: 250px;
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-card h3 {
+    padding: 20px;
+    color: var(--primary-color);
+}
+
+.product-card p {
+    padding: 0 20px 20px;
+}
+
+.product-link {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.product-link:hover {
+    background-color: var(--primary-color);
+}
+
+/* Events Section */
+.events-section {
+    padding: 80px 0;
+    background-color: var(--background-light);
+}
+
+.event-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.event-card {
+    text-align: center;
+    padding: 30px;
+    background-color: var(--background-white);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+}
+
+.event-card i {
+    font-size: 2.5em;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 80px 0;
+    background-color: var(--background-white);
+}
+
+.contact-grid {
+    max-width: 600px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.contact-info h3 {
+    color: var(--primary-color);
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    margin-bottom: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Buttons */
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+}
+
+.cta-button:hover {
+    background-color: var(--secondary-color);
+}
+
+.cta-button.secondary {
+    background-color: var(--secondary-color);
+}
+
+.cta-button.secondary:hover {
+    background-color: var(--primary-color);
+}
+
+/* Section Headers */
+section h2 {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Add to existing CSS file */
+.service-card {
+    background: var(--background-white);
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.service-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-size: 1.4em;
+}
+
+.service-card p {
+    color: var(--text-dark);
+    font-size: 0.9em;
+    line-height: 1.6;
+}
